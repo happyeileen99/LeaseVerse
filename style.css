@@ -228,11 +228,15 @@ a{
     padding: 8px 12px;
 }
 
-.trial {
+.container3 {
     font-size: 50px;
-    font-style:initial;
     text-align: center;
-    color: rgb(99, 98, 98);
+    color:#999;
+    text-transform: uppercase;
+    font-weight:bold;
+    width:100%;
+    bottom:45%;
+    display:block;
 }    
 
 .signin {
@@ -261,8 +265,6 @@ a{
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
-
-
 
 p {
   position:fixed;
