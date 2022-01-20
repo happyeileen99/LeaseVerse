@@ -1,0 +1,258 @@
+ :root {
+     --text-color: #f0f4f5;
+     --background-color: #263343;
+     --accent-color: #5933AA;
+     --side-padding: 12px;
+ }
+
+ .@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro';
+    text-align:center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(111, 79, 182, 0.34);
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 30px;
+}
+
+.navbar_logo {
+    font-size: 30px;
+}
+
+.navbar_logo i {
+    font-size: 30px;
+    color: #5933AA;
+}
+
+.navbar_logo a span:nth-child(1) {
+    color:#5933AA;
+    font-weight: bold;
+    font-stretch: expanded;
+}
+
+.navbar_logo a span:nth-child(2) {
+    color: #45818e;
+    font-weight: bold;
+    font-stretch: expanded;
+}
+
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_menu li {
+    font-size: large;
+    padding: 8px 12px;   
+}
+
+.navbar_menu li:hover {
+    text-decoration: underline;
+    color: rgba(240, 244, 245,1);
+}
+.navbar_btn {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.navbar_btn li {
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+#login {
+    background-color: #f0f4f5;
+    color : #5933AA;  
+}
+
+#login:hover {
+    cursor: pointer;
+    border: 1px solid #5933AA;
+    border-width: 1px;
+    font-size: inherit;
+    line-height: 0.85714286em;
+}
+
+#try {
+    background-color: #5933AA;
+    color: #f0f4f5;
+    border-color: #f0f4f5;
+}
+
+#try:hover {
+    -webkit-transition: 0.1s linear;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid #5933AA;
+    border-width: 1px;
+    font-size: inherit;
+    line-height: 0.85714286em;
+}
+
+.navbar_toggleBtn{
+    display: none;
+    position: absolute;
+    right: 60px;
+    font-size: 24px;
+    color: #5933AA;
+}
+
+ @media screen and (max-width: 768px) {
+     .navbar {
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 8px 24px;
+     }
+
+     .navbar_menu {
+         display: none;
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+     }
+
+     .navbar_menu li{
+         width: 100%;
+         text-align: center;
+
+     }
+
+     .navbar_btn {
+         display: none;
+         justify-content: center;
+         width: 100%;
+     }
+
+     .navbar_toggleBtn {
+         display: block;
+     }
+
+     .navbar_menu.active,
+     .navbar_btn.active {
+         display: flex;
+     }
+ }
+
+ .cover {
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    flex-direction:column;
+    margin:0;
+    height:100vh;
+    background:#f0f4f5;
+    background-image: url( "image/agree1.jpg" );  
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.main1 {
+    text-align:left;  
+    width:1000px;
+    height: 1000px;
+    margin: 10px;
+    }
+
+
+.title {
+    color : rgb(126, 31, 126) ;
+    font-size: 48px;
+}
+
+.contentp {
+    font-size: 24px;
+    color:rgb(99, 98, 98);
+}
+.main2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height:100vh;
+    padding: 8px 12px;
+}
+
+#container2 {
+  color:#999;
+  text-transform: uppercase;
+  font-size:36px;
+  font-weight:bold;
+  /* padding-top:200px;  
+  position:fixed; */
+  width:100%;
+  bottom:45%;
+  display:block;
+}
+
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#42c58a;
+}
+#flip div:first-child div {
+  background:#4ec7f3;
+}
+#flip div:last-child div {
+  background:#DC143C;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+p {
+  position:fixed;
+  width:100%;
+  bottom:30px;
+  font-size:12px;
+  color:#999;
+  margin-top:200px;
+}
