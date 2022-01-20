@@ -149,39 +149,6 @@ a{
     }
 
 
-.trial {
-    font-size: 30px;
-    font-style:initial;
-    text-align: center;
-    color: rgb(99, 98, 98);
-}    
-
-.signin {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: rgba(89, 51, 170, 0.8);
-    background-image: linear-gradient(to top left,
-                                      rgba(0, 0, 0, .2),
-                                      rgba(0, 0, 0, .2) 30%,
-                                      rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
-}
-
-.signin:hover {
-    background-color: rgba(69, 129, 142, 0.6);
-}
-
-.signin:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
 .title {
     color : rgb(126, 31, 126) ;
     font-size: 48px;
@@ -251,6 +218,51 @@ a{
   99.99% {margin-top:0px;}
   100% {margin-top:-270px;}
 }
+
+.main3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height:100vh;
+    padding: 8px 12px;
+}
+
+.trial {
+    font-size: 50px;
+    font-style:initial;
+    text-align: center;
+    color: rgb(99, 98, 98);
+}    
+
+.signin {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(173,139,247,1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.signin:hover {
+    background-color: rgba(89, 51, 170, 0.8);
+}
+
+.signin:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
 
 p {
   position:fixed;
