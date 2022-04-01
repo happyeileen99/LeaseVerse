@@ -6745,7 +6745,7 @@ textarea.form-control-lg {
   display: inline-flex !important;
 }
 
-.d-none {
+.thankyou_message {
   display: none !important;
 }
 
@@ -11429,6 +11429,7 @@ p {
 }
 
 
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
@@ -11464,6 +11465,8 @@ p {
     margin-right: 0;
   }
 }
+
+
 
 header.masthead {
   margin-bottom: 6rem;
@@ -11843,6 +11846,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #ced4da;
+}
+
+.honeypot-field {
+  display: none;
 }
 
 .footer {
