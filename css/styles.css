@@ -11852,6 +11852,12 @@ section#contact form#contactForm :-ms-input-placeholder {
   display: none;
 }
 
+@media (min-width: 576px) {
+  .honeypot-field {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .honeypot-field {
     display: none;
